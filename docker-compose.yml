@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  py38:
+    container_name: MEMEBOT-py38
+    build:
+      dockerfile: Dockerfile
+      target: py38
+    volumes:
+      - .:/repository/
+    environment:
+      - MEMEBOT_API_KEY=
+      - MEMEBOT_API_BASE=
+
+  py39:
+    container_name: MEMEBOT-py39
+    build:
+      dockerfile: Dockerfile
+      target: py39
+    volumes:
+      - .:/repository/
+    environment:
+      - MEMEBOT_API_KEY=
+      - MEMEBOT_API_BASE=
+
+  py310:
+    container_name: MEMEBOT-py310
+    build:
+      dockerfile: Dockerfile
+      target: py310
+    volumes:
+      - .:/repository/
+    environment:
+      - MEMEBOT_API_KEY=
+      - MEMEBOT_API_BASE=
+
+  py311:
+    container_name: MEMEBOT-py311
+    build:
+      dockerfile: Dockerfile
+      target: py311
+    volumes:
+      - .:/repository/
+    environment:
+      - MEMEBOT_API_KEY=
+      - MEMEBOT_API_BASE=
+
+  py312:
+    container_name: MEMEBOT-py312
+    build:
+      dockerfile: Dockerfile
+      target: py312
+    volumes:
+      - .:/repository/
+    environment:
+      - MEMEBOT_API_KEY=
+      - MEMEBOT_API_BASE=
